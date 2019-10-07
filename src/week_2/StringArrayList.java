@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class stringArrayList {
+public class StringArrayList {
     public void stringArrayList() {
         // 3. string, array of strings, list of strings
         System.out.println("\n");

@@ -1,6 +1,6 @@
 package week_1;
 
-public class nonPrimitiveDataType {
+public class NonPrimitiveDataType {
     public void nonPrimitiveDataType() {
         // 4.b: non-primitive data types
         System.out.println("\nNon-Primitive data-types (4.b): ");

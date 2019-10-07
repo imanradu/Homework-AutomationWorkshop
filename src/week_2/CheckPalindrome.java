@@ -2,7 +2,7 @@ package week_2;
 
 import java.util.Scanner;
 
-public class checkPalindrome {
+public class CheckPalindrome {
     public void checkPalindrome() {
         // 2. check if the string is a palindrome
         System.out.println("\n");

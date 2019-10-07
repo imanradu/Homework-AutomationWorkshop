@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class hashMaps {
+public class HashMaps {
     public void hashMaps() {
         // 4. empty map with key=name and value=email
         System.out.println("\n");

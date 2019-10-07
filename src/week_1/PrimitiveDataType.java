@@ -2,7 +2,7 @@ package week_1;
 
 import java.util.Random;
 
-public class primitiveDataType {
+public class PrimitiveDataType {
     public void primitiveDataType() {
         Random rand = new Random();
 

@@ -1,6 +1,6 @@
 package week_2;
 
-public class compareTwoStrings {
+public class CompareTwoStrings {
     public void compareTwoStrings() {
         // 1. compare two strings
         System.out.println("\n");
