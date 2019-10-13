@@ -3,7 +3,7 @@ package week_4;
 public class Employee {
     private String name;
     private int age;
-    private char gender;
+    private String gender;
     private String department;
     private String jobTitle;
 
@@ -15,7 +15,7 @@ public class Employee {
         this.age = age;
     }
 
-    public void setGender(char gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -35,9 +35,7 @@ public class Employee {
         return this.age;
     }
 
-    public char getGender() {
-        return this.gender;
-    }
+    public String getGender() { return this.gender; }
 
     public String getDepartment() {
         return this.department;
