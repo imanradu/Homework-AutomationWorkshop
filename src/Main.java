@@ -36,11 +36,19 @@ public class Main {
         Alien alien = new Alien();
 
         // alien bites human 1 time
-        System.out.println(human.getHealth());
-        System.out.println(alien.getEnergy());
-        int damage = alien.biteHuman();
-        human.setHealth(damage);
-        System.out.println(human.getHealth());
-        System.out.println(alien.getEnergy());
+        System.out.println("Human health: " + human.getHealth());
+        System.out.println("Alien energy: " + alien.getEnergy());
+        System.out.println("alien bite human: ");
+        human.setHealth(alien.biteHuman());
+        System.out.println("Human health: " + human.getHealth());
+        System.out.println("Alien energy: " + alien.getEnergy());
+        // Human shoots alien 2 times
+        System.out.println("Human ammo: " + human.getAmmo());
+        System.out.println("Alien health: " + alien.getHealth());
+        System.out.println("human shoot alien 2 times: ");
+        alien.setHealth(human.shootAlien());
+        alien.setHealth(human.shootAlien());
+        System.out.println("Human ammo: " + human.getAmmo());
+        System.out.println("Alien health: " + alien.getHealth());
     }
 }

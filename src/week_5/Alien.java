@@ -17,6 +17,8 @@ public class Alien implements Character {
 
     @Override
     public boolean isDead() {
+        if(this.health == 0)
+            this.isDead = true;
         return this.isDead;
     }
 

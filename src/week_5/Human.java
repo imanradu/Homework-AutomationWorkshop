@@ -17,10 +17,17 @@ public class Human implements Character {
 
     @Override
     public boolean isDead() {
+        if(this.health == 0)
+            this.isDead = true;
         return this.isDead;
     }
 
-    public void shootAlien() {
-        ammo -= 15;
+    public int shootAlien() {
+        this.ammo -= 15;
+        return 25;
+    }
+
+    public int getAmmo() {
+        return this.ammo;
     }
 }
