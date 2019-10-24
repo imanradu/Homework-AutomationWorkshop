@@ -39,16 +39,26 @@ public class Main {
         System.out.println("Human health: " + human.getHealth());
         System.out.println("Alien energy: " + alien.getEnergy());
         System.out.println("alien bite human: ");
-        human.setHealth(alien.biteHuman());
-        System.out.println("Human health: " + human.getHealth());
+        alien.biteHuman();
+        human.setHealth(alien.getDamage());
         System.out.println("Alien energy: " + alien.getEnergy());
+        if (human.isDead())
+            System.out.println("Human is dead");
+        else
+            System.out.println("Human health: " + human.getHealth());
         // Human shoots alien 2 times
         System.out.println("Human ammo: " + human.getAmmo());
         System.out.println("Alien health: " + alien.getHealth());
         System.out.println("human shoot alien 2 times: ");
-        alien.setHealth(human.shootAlien());
-        alien.setHealth(human.shootAlien());
+        human.shootAlien();
+        alien.setHealth(human.getDamage());
+        human.shootAlien();
+        alien.setHealth(human.getDamage());
         System.out.println("Human ammo: " + human.getAmmo());
-        System.out.println("Alien health: " + alien.getHealth());
+        if (alien.isDead()) {
+            System.out.println("Alien is dead");
+        } else {
+            System.out.println(alien.getHealth());
+        }
     }
 }

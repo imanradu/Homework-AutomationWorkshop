@@ -4,6 +4,7 @@ public class Human implements Character {
     int health = 100;
     int ammo = 200;
     boolean isDead = false;
+    int damage;
 
     @Override
     public int getHealth() {
@@ -22,9 +23,13 @@ public class Human implements Character {
         return this.isDead;
     }
 
-    public int shootAlien() {
+    public int getDamage() {
+        return this.damage;
+    }
+
+    public void shootAlien() {
         this.ammo -= 15;
-        return 25;
+        this.damage = 25;
     }
 
     public int getAmmo() {

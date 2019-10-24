@@ -4,6 +4,7 @@ public class Alien implements Character {
     int health = 200;
     int energy = 100;
     boolean isDead = false;
+    int damage;
 
     @Override
     public int getHealth() {
@@ -22,14 +23,18 @@ public class Alien implements Character {
         return this.isDead;
     }
 
-    public int biteHuman() {
+    public int getDamage() {
+        return this.damage;
+    }
+
+    public void biteHuman() {
         this.energy -= 10;
         if (this.energy >= 80)
-            return 25;
+            this.damage = 25;
         else if (this.energy >= 50 && this.energy < 80)
-            return 15;
+            this.damage = 15;
         else
-            return 10;
+            this.damage = 10;
     }
 
     public int getEnergy() {
