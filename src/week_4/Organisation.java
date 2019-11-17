@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 public class Organisation extends Employee {
     public void addEmployee(HashMap employees) {
+        /**
+         * Method to add a new employee field by field
+         */
         Employee newEmployee = new Employee();
         Scanner input = new Scanner(System.in);
         System.out.print("Name: ");
@@ -22,6 +25,9 @@ public class Organisation extends Employee {
     }
 
     public void addEmployee(HashMap employees, String name, String  gender, int age, String department, String jobTitle) {
+        /**
+         * Method to add a new employee by parameters
+         */
         Employee newEmployee = new Employee();
         newEmployee.setName(name);
         newEmployee.setGender(gender);
@@ -32,6 +38,9 @@ public class Organisation extends Employee {
     }
 
     public void displayEmployee(Map.Entry<Integer, Employee> employee) {
+        /**
+         * The method to display the employee
+         */
         System.out.println("\n>>> The employee is: " + "\nName: " + employee.getValue().getName()
                 + "\nGender: " + employee.getValue().getGender()
                 + "\nAge: " + employee.getValue().getAge()
@@ -41,6 +50,9 @@ public class Organisation extends Employee {
     }
 
     public void searchEmployee(HashMap<Integer, Employee> employees) {
+        /**
+         * the method to search for employee by name, gender. age. department or job title.
+         */
         Scanner input = new Scanner(System.in);
         System.out.println("\n>>> Search engine <<<");
         System.out.println("1. Search by Name ");
@@ -100,12 +112,18 @@ public class Organisation extends Employee {
     }
 
     public void removeEmployee(HashMap employees) {
+        /**
+         * the method to delete an employee by user id
+         */
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the user id: ");
         employees.remove(input.nextInt());
     }
 
     public void updateEmployee(HashMap<Integer, Employee> employees) {
+        /**
+         * the method to update an employee
+         */
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the user id: ");
         int userID = input.nextInt();
@@ -144,6 +162,9 @@ public class Organisation extends Employee {
     }
 
     public void mainMenu(HashMap employees) {
+        /**
+         * Main Menu
+         */
         System.out.println("\n>>> Organization <<<");
         System.out.println("1. Adding employees");
         System.out.println("2. Searching for employees");

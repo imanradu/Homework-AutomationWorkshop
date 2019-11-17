@@ -3,6 +3,9 @@ package week_1;
 import java.util.Random;
 
 public class RandomArray {
+    /**
+     * Array
+     */
     public void randomArray() {
         Random rand = new Random();
         // 7. array of 10 elements, using random values from range 1 to 100, which needs to include number 15

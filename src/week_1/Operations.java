@@ -3,6 +3,9 @@ package week_1;
 import java.util.Random;
 
 public class Operations {
+    /**
+     * Operations: increment, comparision
+     */
     public void operations() {
         Random rand = new Random();
         // 5. week_1.operations

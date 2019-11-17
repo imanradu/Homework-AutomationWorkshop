@@ -3,8 +3,10 @@ package week_2;
 import java.util.Scanner;
 
 public class CheckPalindrome {
+    /**
+     * Check if the string is a palindrome
+     */
     public void checkPalindrome() {
-        // 2. check if the string is a palindrome
         System.out.println("\n");
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a one word string: ");

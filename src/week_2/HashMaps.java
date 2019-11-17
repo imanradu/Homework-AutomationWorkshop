@@ -5,6 +5,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class HashMaps {
+    /**
+     * empty map with key=name and value=email
+     */
     public void hashMaps() {
         // 4. empty map with key=name and value=email
         System.out.println("\n");

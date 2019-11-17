@@ -8,16 +8,25 @@ public class Human implements Character {
 
     @Override
     public int getHealth() {
+        /**
+         * return the human health
+         */
         return this.health;
     }
 
     @Override
     public void setHealth(int damage) {
+        /**
+         * decrement the human health
+         */
         this.health -= damage;
     }
 
     @Override
     public boolean isDead() {
+        /**
+         * return 1 if the human is dead
+         */
         if(this.health == 0)
             this.isDead = true;
         return this.isDead;
@@ -28,11 +37,17 @@ public class Human implements Character {
     }
 
     public void shootAlien() {
+        /**
+         * decrement the ammo and set the damage
+         */
         this.ammo -= 15;
         this.damage = 25;
     }
 
     public int getAmmo() {
+        /**
+         * return the ammo
+         */
         return this.ammo;
     }
 }

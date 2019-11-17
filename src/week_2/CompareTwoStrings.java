@@ -1,6 +1,10 @@
 package week_2;
 
 public class CompareTwoStrings {
+    /**
+     * 1. Compare two strings
+     * 2. Concat two strings
+     */
     public void compareTwoStrings() {
         // 1. compare two strings
         System.out.println("\n");

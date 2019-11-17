@@ -3,6 +3,9 @@ package week_1;
 import java.util.Random;
 
 public class PrimitiveDataType {
+    /**
+     * Primitive Data Types: boolean, char, int, long, double.
+     */
     public void primitiveDataType() {
         Random rand = new Random();
 

@@ -1,6 +1,10 @@
 package week_4;
 
 public class Employee {
+    /**
+     * Employee class, with attributes: name, age, gender, department, job title.
+     * Properties to get, update and delete employee attributes.
+     */
     private String name;
     private int age;
     private String gender;
